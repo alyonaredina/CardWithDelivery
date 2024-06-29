@@ -23,7 +23,7 @@ public class CardWithDeliveryTest {
         open("http://localhost:9999");
         //SelenideElement form = $(".form");
         $("[data-test-id=city] input").setValue("Казань");
-        String planningDate = generateDate(2, "dd.MM.yyyy");
+        String planningDate = generateDate(3, "dd.MM.yyyy");
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id=date] input").setValue(planningDate);
         $("[data-test-id=name] input").setValue("Иван Петров");
